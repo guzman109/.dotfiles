@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Change Plasma Color to Light
+plasma-apply-colorscheme KvMojaveLight &> /dev/null
+
+# Change Kitty Theme to Light
+$HOME/.local/bin/kitten themes --reload-in=all Catppuccin-Latte
