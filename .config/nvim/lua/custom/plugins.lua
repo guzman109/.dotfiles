@@ -21,17 +21,19 @@ local plugins = {
 				-- LSP
 				"lua-language-server",
 				"ruff-lsp",
-				"vetur-vls",
-				"typescript-language-server",
-				"css-lsp",
-				"html-lsp",
+				-- "vetur-vls",
+				-- "typescript-language-server",
+				-- "css-lsp",
+				-- "html-lsp",
 				"dockerfile-language-server",
 				"docker-compose-language-service",
         "pyright",
 				-- Formatters
 				"stylua",
-				"prettier",
+				-- "prettier",
 				"ruff",
+        -- Linters
+        "mypy",
 			},
 		},
 	},
@@ -50,6 +52,12 @@ local plugins = {
 			require("custom.configs.conform")
 		end,
 	},
+  {
+    "mfussenegger/nvim-lint",
+    config = function ()
+      require("custom.configs.lint")
+    end
+  },
 	-- Rainbow Delimiters
 	{
 		"HiPhish/rainbow-delimiters.nvim",

@@ -48,3 +48,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 #zoxide
 eval "$(zoxide init zsh)"
+
+# fnm
+export PATH="/home/guzman109/.local/share/fnm:$PATH"
+eval "`fnm env`"

@@ -12,10 +12,10 @@ M.mappings = require("custom.mappings")
 M.plugins = "custom.plugins"
 
 M.ui = {
-	theme = "catppuccin",
+	theme = "nord",
 	theme_toggle = {
-		"one_light",
 		"catppuccin",
+		"nord",
 	},
 	statusline = {
 		theme = "minimal",
