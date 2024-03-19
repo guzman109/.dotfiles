@@ -1,4 +1,4 @@
-local configs = require("plugins.configs.lspconfig")
+local configs = require("nvchad.configs.lspconfig")
 local on_attach = configs.on_attach
 local capabilities = configs.capabilities
 
@@ -7,7 +7,8 @@ local lspconfig = require "lspconfig"
 local servers = {
   "lua_ls",
   "ruff_lsp",
-  "pyright",
+  -- "pyright",
+  "pylyzer",
   "cssls",
   "html",
   "tsserver",

@@ -1,10 +1,35 @@
-local plugins = { 
-  -- {
-  --   "nvim-tree/nvim-tree.lua",
-  --   opts = {
-  --     git = { enable = true },
-  --   },
-  -- },
+local plugins = {
+	-- {
+	--   "nvim-tree/nvim-tree.lua",
+	--   opts = {
+	--     git = { enable = true },
+	--   },
+	-- },
+	{
+		"stevearc/oil.nvim",
+		opts = {},
+		-- Optional dependencies
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+	{
+		"cameron-wags/rainbow_csv.nvim",
+		config = true,
+		ft = {
+			"csv",
+			"tsv",
+			"csv_semicolon",
+			"csv_whitespace",
+			"csv_pipe",
+			"rfc_csv",
+			"rfc_semicolon",
+		},
+		cmd = {
+			"RainbowDelim",
+			"RainbowDelimSimple",
+			"RainbowDelimQuoted",
+			"RainbowMultiDelim",
+		},
+	},
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = {
@@ -29,21 +54,22 @@ local plugins = {
 				-- "html-lsp",
 				"dockerfile-language-server",
 				"docker-compose-language-service",
-        "pyright",
+				-- "pyright",
+				-- "pylyzer", currently not installed with mason
 				-- Formatters
 				"stylua",
 				-- "prettier",
 				"ruff",
-        -- Linters
-        "mypy",
+				-- Linters
+				"mypy",
 			},
 		},
 	},
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("plugins.configs.lspconfig")
-			require("custom.configs.lspconfig")
+			require("nvchad.configs.lspconfig").defaults()
+			require("configs.lspconfig")
 		end,
 	},
 	{
@@ -51,15 +77,15 @@ local plugins = {
 		--  for users those who want auto-save conform + lazyloading!
 		-- event = "BufWritePre"
 		config = function()
-			require("custom.configs.conform")
+			require("configs.conform")
 		end,
 	},
-  {
-    "mfussenegger/nvim-lint",
-    config = function ()
-      require("custom.configs.lint")
-    end
-  },
+	{
+		"mfussenegger/nvim-lint",
+		config = function()
+			require("configs.lint")
+		end,
+	},
 	-- Rainbow Delimiters
 	{
 		"HiPhish/rainbow-delimiters.nvim",
