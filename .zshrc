@@ -24,6 +24,7 @@ alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
 alias cd="z"
 alias cat="batcat"
+
 # Starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
@@ -38,17 +39,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-
-# bun completions
-[ -s "/home/guzman109/.bun/_bun" ] && source "/home/guzman109/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 #zoxide
 eval "$(zoxide init zsh)"
 
-# fnm
-export PATH="/home/guzman109/.local/share/fnm:$PATH"
-eval "`fnm env`"
