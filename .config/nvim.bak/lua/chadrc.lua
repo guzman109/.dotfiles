@@ -15,7 +15,7 @@ M.ui = {
 		"rosepine",
 	},
 	statusline = {
-		theme = "minimal",
+		-- theme = "defualt",
 		separator_style = "round",
 	},
 	tabufline = {

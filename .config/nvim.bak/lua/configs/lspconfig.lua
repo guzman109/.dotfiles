@@ -7,8 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "lua_ls",
   "ruff_lsp",
-  -- "pyright",
-  "pylyzer",
+  "pyright",
   "cssls",
   "html",
   "tsserver",

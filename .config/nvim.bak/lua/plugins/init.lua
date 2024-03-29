@@ -54,8 +54,7 @@ local plugins = {
 				-- "html-lsp",
 				"dockerfile-language-server",
 				"docker-compose-language-service",
-				-- "pyright",
-				-- "pylyzer", currently not installed with mason
+				"pyright",
 				-- Formatters
 				"stylua",
 				-- "prettier",
