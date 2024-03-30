@@ -24,6 +24,8 @@ alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
 alias cd="z"
 alias cat="batcat"
+alias icat="kitty icat"
+alias switch-them="kitty +kitten themes"
 
 # Starship
 eval "$(starship init zsh)"

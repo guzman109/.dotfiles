@@ -1,7 +1,7 @@
 return {
   {
     "rose-pine/neovim",
-    name = "rose-pien",
+    name = "rose-pine",
     config = function()
       require("rose-pine").setup({
         variant = "auto", -- auto, main, moon, or dawn
@@ -71,15 +71,42 @@ return {
       })
 
       -- vim.cmd("colorscheme rose-pine")
-      -- vim.cmd("colorscheme rose-pine-main")
+      vim.cmd("colorscheme rose-pine-main")
       vim.cmd("colorscheme rose-pine-moon")
       vim.cmd("colorscheme rose-pine-dawn")
     end,
   },
   {
+    "zaldih/themery.nvim",
+    config = function()
+      require("themery").setup({
+        themes = {
+          "catppuccin-mocha",
+          "catppuccin-latte",
+          "catppuccin-frappe",
+          "catppuccin-macchiato",
+          "rose-pine-main",
+          "rose-pine-dawn",
+          "rose-pine-moon",
+          "tokyonight-storm",
+          "tokyonight-night",
+          "tokyonight-moon",
+          "tokyonight-day",
+        }, -- Your list of installed colorschemes
+        themeConfigFile = "~/.config/nvim/lua/plugins/color-scheme.lua", -- Described below
+        livePreview = true, -- Apply theme while browsing. Default to true.
+      })
+      vim.keymap.set({ "n", "v", "t" }, "<leader>tt", "<cmd>Themery<cr>", { desc = "Open Themes" })
+      vim.keymap.set({ "n", "v", "t" }, "<leader>td", "<cmd>colorscheme rose-pine-dawn<cr>", { desc = "Day Theme" })
+      vim.keymap.set({ "n", "v", "t" }, "<leader>tn", "<cmd>colorscheme rose-pine-moon<cr>", { desc = "Night Theme" })
+
+      -- im.keymap.set(),
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine-dawn",
+      colorscheme = "rose-pine-moon",
     },
   },
 }
