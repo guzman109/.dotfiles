@@ -1,10 +1,11 @@
 return {
+  -- toggle terminal
   {
-    "stevearc/oil.nvim",
-    opts = {},
-    -- Optional dependencies
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    config = true,
   },
+
   -- change trouble config
   {
     "folke/trouble.nvim",

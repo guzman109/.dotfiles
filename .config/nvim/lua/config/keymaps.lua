@@ -53,3 +53,19 @@ vim.keymap.set("n", "<leader>w-", "<A-W>s", { desc = "Split window below", remap
 vim.keymap.set("n", "<leader>w|", "<A-W>v", { desc = "Split window right", remap = true })
 vim.keymap.set("n", "<leader>-", "<A-W>s", { desc = "Split window below", remap = true })
 vim.keymap.set("n", "<leader>|", "<A-W>v", { desc = "Split window right", remap = true })
+
+--ToggleTerm
+vim.keymap.set({ "n", "i", "t" }, "<A-i>", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle Float Terminal" })
+vim.keymap.set(
+  { "n", "i", "t" },
+  "<A-b>",
+  "<cmd>ToggleTerm direction=horizontal<cr>",
+  { desc = "Toggle Bottom Terminal" }
+)
+vim.keymap.set(
+  { "n", "i", "t" },
+  "<A-v>",
+  "<cmd>ToggleTerm direction=vertical<cr>",
+  { desc = "Toggle Vertical Terminal" }
+)
+vim.keymap.set({ "n", "i", "t" }, "<A-t>", "<cmd>ToggleTerm direction=tab<cr>", { desc = "Toggle Tab Terminal" })
