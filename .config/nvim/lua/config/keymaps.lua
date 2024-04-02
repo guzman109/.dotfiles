@@ -69,3 +69,11 @@ vim.keymap.set(
   { desc = "Toggle Vertical Terminal" }
 )
 vim.keymap.set({ "n", "i", "t" }, "<A-t>", "<cmd>ToggleTerm direction=tab<cr>", { desc = "Toggle Tab Terminal" })
+
+--NeoTree Toggle
+vim.keymap.set(
+  { "n", "i", "t" },
+  "<A-n>",
+  "<cmd>Neotree source=filesystem reveal=true position=float toggle=true<cr>",
+  { desc = "Toggle Tree Float" }
+)
