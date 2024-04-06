@@ -13,7 +13,7 @@ compinit
 # End of lines added by compinstall
 ##################################################################################################################
 PATH="$HOME/.local/bin:$PATH"
-
+PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Rust
 source "$HOME/.cargo/env"
@@ -37,4 +37,5 @@ eval "`fnm env`"
 
 #zoxide
 eval "$(zoxide init zsh)"
+
 
