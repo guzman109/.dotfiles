@@ -1,15 +1,9 @@
 local plugins = {
-	-- {
-	--   "nvim-tree/nvim-tree.lua",
-	--   opts = {
-	--     git = { enable = true },
-	--   },
-	-- },
 	{
-		"stevearc/oil.nvim",
-		opts = {},
-		-- Optional dependencies
-		dependencies = { "nvim-tree/nvim-web-devicons" },
+	  "nvim-tree/nvim-tree.lua",
+	  opts = {
+	    git = { enable = true },
+	  },
 	},
 	{
 		"cameron-wags/rainbow_csv.nvim",

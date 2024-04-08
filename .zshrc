@@ -16,14 +16,14 @@ PATH="$HOME/.local/bin:$PATH"
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Rust
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 # Alias
 alias ls="eza"
 alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
 alias cd="z"
-alias cat="batcat"
+alias cat="bat"
 alias icat="kitty icat"
 alias switch-them="kitty +kitten themes"
 
