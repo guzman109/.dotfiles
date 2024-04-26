@@ -14,9 +14,9 @@ compinit
 ##################################################################################################################
 PATH="$HOME/.local/bin:$PATH"
 PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-
+PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 # Rust
-# source "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
 
 # Alias
 alias ls="eza"
@@ -35,7 +35,15 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export PATH="/home/guzman109/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
-#zoxide
+# zoxide
 eval "$(zoxide init zsh)"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
+# Deno
+export DENO_INSTALL="/home/guzman109/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"

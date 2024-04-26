@@ -4,13 +4,12 @@ local opts = {
 
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "prettier" },
-    html = { "prettier" },
-    python = { "ruff_format" },
-    typescript = { "prettier" },
-    javascript = { "prettier" },
-    json = { "prettier" },
-    vue = { "prettier" },
+    python = { "ruff_format", "ruff_fix"},
+    typescript = { "deno_fmt" },
+    javascript = { "deno_fmt" },
+    json = { "yq" },
+    yaml = { "yq" },
+    rust = { "rustfmt" },
   },
 
   -- adding same formatter for multiple filetypes can look too much work for some
