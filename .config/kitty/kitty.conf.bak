@@ -24,7 +24,7 @@ bold_italic_font auto
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 12.0
+font_size 13.0
 
 #: Font size (in pts)
 
@@ -61,7 +61,8 @@ font_size 12.0
 #: The syntax is::
 
 #:     symbol_map codepoints Font Family Name
-symbol_map U+e000-U+e00a,U+ea60-U+ebeb,U+e0a0-U+e0c8,U+e0ca,U+e0cc-U+e0d4,U+e200-U+e2a9,U+e300-U+e3e3,U+e5fa-U+e6b1,U+e700-U+e7c5,U+f000-U+f2e0,U+f300-f372,U+f400-U+f532,U+f0001-U+f1af0 Symbols Nerd Font Mono
+symbol_map U+e000-U+e00a,U+ea60-U+ebeb,U+e0a0-U+e0c8,U+e0ca,U+e0cc-U+e0d4,U+e200-U+e2a9,U+e300-U+e3e3,U+e5fa-U+e6b1,U+e700-U+e7c5,U+f000-U+f2e0,U+f300-U+f372,U+f400-U+f532,U+f0001-U+f1af0 Symbols Nerd Font Mono
+
 
 # narrow_symbols
 
@@ -986,7 +987,7 @@ inactive_tab_font_style normal
 
 #: The foreground and background colors.
 
-background_opacity 0.90
+background_opacity 0.98
 
 #: The opacity of the background. A number between zero and one, where
 #: one is opaque and zero is fully transparent. This will only work if
@@ -2220,6 +2221,6 @@ map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
 map ctrl+shift+y new_tab_with_cwd
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Moon
+# Rosé Pine Dawn
 include current-theme.conf
 # END_KITTY_THEME

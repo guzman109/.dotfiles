@@ -13,8 +13,7 @@ compinit
 # End of lines added by compinstall
 ##################################################################################################################
 PATH="$HOME/.local/bin:$PATH"
-PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+
 # Rust
 source "$HOME/.cargo/env"
 
@@ -23,9 +22,10 @@ alias ls="eza"
 alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
 alias cd="z"
-alias cat="bat"
+alias cat="batcat"
 alias icat="kitty icat"
 alias switch-them="kitty +kitten themes"
+alias cargo-update="cargo-install-update install-update --all"
 
 # Starship
 eval "$(starship init zsh)"
@@ -47,3 +47,8 @@ eval "$(pyenv virtualenv-init -)"
 # Deno
 export DENO_INSTALL="/home/guzman109/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+# Bob
+export PATH="/home/guzman109/.local/share/bob/nvim-bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

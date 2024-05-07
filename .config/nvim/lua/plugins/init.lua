@@ -1,5 +1,47 @@
 local plugins = {
   {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = function(_, opts)
+      -- Other blankline configuration here
+      return require("indent-rainbowline").make_opts(opts)
+    end,
+    dependencies = {
+      "TheGLander/indent-rainbowline.nvim",
+    },
+  },
+  -- {
+  --   "nomnivore/ollama.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --   },
+  --
+  --   -- All the user commands added by the plugin
+  --   cmd = { "Ollama", "OllamaModel", "OllamaServe", "OllamaServeStop" },
+  --
+  --   keys = {
+  --     -- Sample keybind for prompt menu. Note that the <c-u> is important for selections to work properly.
+  --     {
+  --       "<leader>oo",
+  --       ":<c-u>lua require('ollama').prompt()<cr>",
+  --       desc = "ollama prompt",
+  --       mode = { "n", "v" },
+  --     },
+  --
+  --     -- Sample keybind for direct prompting. Note that the <c-u> is important for selections to work properly.
+  --     {
+  --       "<leader>oG",
+  --       ":<c-u>lua require('ollama').prompt('Generate_Code')<cr>",
+  --       desc = "ollama Generate Code",
+  --       mode = { "n", "v" },
+  --     },
+  --   },
+  --
+  --   ---@type Ollama.Config
+  --   opts = {
+  --     -- your configuration overrides
+  --   },
+  -- },
+  {
     "nvim-tree/nvim-tree.lua",
     opts = {
       git = { enable = true },
@@ -10,7 +52,7 @@ local plugins = {
     config = true,
     ft = {
       "csv",
-  "tsv",
+      "tsv",
       "csv_semicolon",
       "csv_whitespace",
       "csv_pipe",
@@ -43,16 +85,16 @@ local plugins = {
         -- LSP
         "lua-language-server",
         "ruff-lsp",
-        "pyright",
         "rust-analyzer",
+        "pyright",
         "dockerfile-language-server",
         "docker-compose-language-service",
-
+        "yaml-language-server",
         -- Formatters
         "stylua",
         "yq",
-        "rustfmt",
         "ruff",
+        "prettier",
         -- Linters
         "mypy",
       },
@@ -69,9 +111,22 @@ local plugins = {
     "stevearc/conform.nvim",
     --  for users those who want auto-save conform + lazyloading!
     -- event = "BufWritePre"
-    config = function()
-      require "configs.conform"
-    end,
+    -- config = function()
+    --   require "configs.conform"
+    -- end,
+    opts = {
+      lsp_fallback = true,
+
+      formatters_by_ft = {
+        lua = { "stylua" },
+        python = { "ruff_format", "ruff_fix" },
+        typescript = { "deno_fmt" },
+        javascript = { "deno_fmt" },
+        json = { "prettier" },
+        yaml = { "yq" },
+        rust = { "rustfmt" },
+      },
+    },
   },
   {
     "mfussenegger/nvim-lint",

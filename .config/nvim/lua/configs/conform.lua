@@ -7,7 +7,7 @@ local opts = {
     python = { "ruff_format", "ruff_fix"},
     typescript = { "deno_fmt" },
     javascript = { "deno_fmt" },
-    json = { "yq" },
+    json = { "prettier" },
     yaml = { "yq" },
     rust = { "rustfmt" },
   },
@@ -21,5 +21,5 @@ local opts = {
   --   lsp_fallback = true,
   -- },
 }
-
-require("conform").setup(opts)
+return opts
+-- require("conform").setup(opts)
