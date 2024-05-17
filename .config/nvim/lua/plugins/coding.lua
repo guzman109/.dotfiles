@@ -47,12 +47,55 @@ return {
     "stevearc/conform.nvim",
     opts = {
       lsp_fallback = true,
-
+      formatters = {
+        ruff_format = {
+          meta = {
+            url = "https://docs.astral.sh/ruff/",
+            description = "An extremely fast Python linter, written in Rust. Formatter subcommand.",
+          },
+          command = "/home/guzman109/.local/bin/ruff",
+          args = {
+            "format",
+            "--force-exclude",
+            "--stdin-filename",
+            "$FILENAME",
+            "-",
+          },
+          stdin = true,
+          cwd = require("conform.util").root_file({
+            "pyproject.toml",
+            "ruff.toml",
+            ".ruff.toml",
+          }),
+        },
+        ruff_fix = {
+          meta = {
+            url = "https://docs.astral.sh/ruff/",
+            description = "An extremely fast Python linter, written in Rust. Fix lint errors.",
+          },
+          command = "/home/guzman109/.local/bin/ruff",
+          args = {
+            "check",
+            "--fix",
+            "--force-exclude",
+            "--exit-zero",
+            "--no-cache",
+            "--stdin-filename",
+            "$FILENAME",
+            "-",
+          },
+          stdin = true,
+          cwd = require("conform.util").root_file({
+            "pyproject.toml",
+            "ruff.toml",
+            ".ruff.toml",
+          }),
+        },
+      },
       formatters_by_ft = {
         lua = { "stylua" },
-        python = { "ruff_format" },
+        python = { "ruff_format", "ruff_fix" },
         typescript = { "deno_fmt" },
-        javascript = { "ruff_fmt" },
         json = { "prettier" },
       },
     },
