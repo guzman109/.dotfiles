@@ -9,7 +9,6 @@ local servers = {
   "lua_ls",
   "ruff_lsp",
   "pyright",
-  "rust_analyzer",
   "dockerls",
   "docker_compose_language_service",
   "yamlls",
@@ -21,6 +20,11 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.denols.setup {
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

@@ -9,7 +9,6 @@ local opts = {
     javascript = { "deno_fmt" },
     json = { "prettier" },
     yaml = { "yq" },
-    rust = { "rustfmt" },
   },
 
   -- adding same formatter for multiple filetypes can look too much work for some

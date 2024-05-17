@@ -85,7 +85,6 @@ local plugins = {
         -- LSP
         "lua-language-server",
         "ruff-lsp",
-        "rust-analyzer",
         "pyright",
         "dockerfile-language-server",
         "docker-compose-language-service",

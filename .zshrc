@@ -22,7 +22,7 @@ alias ls="eza"
 alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
 alias cd="z"
-alias cat="batcat"
+alias cat="bat"
 alias icat="kitty icat"
 alias switch-them="kitty +kitten themes"
 alias cargo-update="cargo-install-update install-update --all"
@@ -51,4 +51,9 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Bob
 export PATH="/home/guzman109/.local/share/bob/nvim-bin:$PATH"
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ROS2
+source /opt/ros/jazzy/setup.zsh
+
