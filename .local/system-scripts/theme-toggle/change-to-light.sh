@@ -4,7 +4,8 @@
 cp .dotfiles/.config/gitui/latte.ron .dotfiles/.config/gitui/theme.ron
 
 # Change Plasma Color and Cursor to Light
-plasma-apply-colorscheme BreezeLight &>/dev/null
+plasma-apply-colorscheme LavandaLight &>/dev/null
+plasma-apply-desktoptheme Lavanda-Light &>/dev/null
 
 # Change Kitty Theme to Dark
 $HOME/.local/bin/kitten themes --reload-in=all Biscuit-Light

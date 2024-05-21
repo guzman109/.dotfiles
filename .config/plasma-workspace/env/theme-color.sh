@@ -1,3 +1,3 @@
 #!/bin/bash
 #
-export THEME_COLOR=0
+export THEME_COLOR=1

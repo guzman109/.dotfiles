@@ -53,7 +53,7 @@ return {
             url = "https://docs.astral.sh/ruff/",
             description = "An extremely fast Python linter, written in Rust. Formatter subcommand.",
           },
-          command = "/home/guzman109/.local/bin/ruff",
+          command = "ruff",
           args = {
             "format",
             "--force-exclude",
@@ -73,7 +73,7 @@ return {
             url = "https://docs.astral.sh/ruff/",
             description = "An extremely fast Python linter, written in Rust. Fix lint errors.",
           },
-          command = "/home/guzman109/.local/bin/ruff",
+          command = "ruff",
           args = {
             "check",
             "--fix",
