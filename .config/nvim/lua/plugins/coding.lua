@@ -41,6 +41,7 @@ return {
           mason = false,
         },
       },
+      autoformat = false,
     },
   },
   {

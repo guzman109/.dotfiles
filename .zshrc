@@ -6,7 +6,7 @@ setopt autocd beep extendedglob nomatch notify
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/guzman109/.zshrc'
+zstyle :compinstall filename '/home/guzman.109/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -57,7 +57,8 @@ alias cat="bat"
 alias icat="kitty icat"
 alias switch-them="kitty +kitten themes"
 alias cargo-update="cargo-install-update install-update --all"
-
+alias klite="kitten themes --reload-in=all Tokyo Night Day"
+alias knite="kitten themes --reload-in=all Tokyo Night Moon"
 # Starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
@@ -72,7 +73,7 @@ eval "$(zoxide init zsh)"
 # eval "$(pyenv virtualenv-init -)"
 
 # Deno
-export DENO_INSTALL="/home/guzman109/.deno"
+export DENO_INSTALL="/home/guzman.109/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # fzf
@@ -82,9 +83,6 @@ eval "$(fzf --zsh)"
 # source /opt/ros/jazzy/setup.zsh
 
 # fnm
-export PATH="/home/guzman109/.local/share/fnm:$PATH"
+export PATH="/home/guzman.109/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/home/guzman109/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

@@ -30,7 +30,7 @@ return {
       })
       vim.keymap.set({ "n", "v", "t" }, "<leader>tt", "<cmd>Themery<cr>", { desc = "Open Themes" })
       vim.keymap.set({ "n", "v", "t" }, "<leader>td", "<cmd>colorscheme tokyonight-day<cr>", { desc = "Day Theme" })
-      vim.keymap.set({ "n", "v", "t" }, "<leader>tn", "<cmd>colorscheme biscuit<cr>", { desc = "Night Theme" })
+      vim.keymap.set({ "n", "v", "t" }, "<leader>tn", "<cmd>colorscheme tokyonight-moon<cr>", { desc = "Night Theme" })
 
       -- im.keymap.set(),
     end,
@@ -38,7 +38,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "biscuit",
+      colorscheme = "tokyonight-moon",
     },
   },
 }

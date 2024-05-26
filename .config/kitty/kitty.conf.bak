@@ -24,7 +24,7 @@ bold_italic_font auto
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 13.0
+font_size 12.0
 
 #: Font size (in pts)
 
@@ -875,7 +875,7 @@ tab_bar_style hidden
 #:     The tab bar is hidden. If you use this, you might want to create a mapping
 #:     for the select_tab action which presents you with a list of tabs and
 #:     allows for easy switching to a tab.
-map alt+tab  select_tab
+map super+tab  select_tab
 tab_bar_align center
 
 #: The horizontal alignment of the tab bar, can be one of: left,
@@ -1484,7 +1484,7 @@ macos_colorspace srgb
 #: configuration will change this value only for newly created OS
 #: windows.
 
-linux_display_server wayland
+linux_display_server auto 
 
 #: Choose between Wayland and X11 backends. By default, an appropriate
 #: backend based on the system state is chosen automatically. Set it
@@ -2221,6 +2221,6 @@ map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
 map ctrl+shift+y new_tab_with_cwd
 
 # BEGIN_KITTY_THEME
-# Biscuit-Dark
+# Tokyo Night Day
 include current-theme.conf
 # END_KITTY_THEME
