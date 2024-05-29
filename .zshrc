@@ -65,11 +65,11 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 
 # Deno
-#export DENO_INSTALL="/home/guzman.109/.deno"
-#export PATH="$DENO_INSTALL/bin:$PATH"
+export DENO_INSTALL="/home/guzman.109/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # fzf
-#eval "$(fzf --zsh)"
+eval "$(fzf --zsh)"
 
 # ROS2
 # source /opt/ros/jazzy/setup.zsh
