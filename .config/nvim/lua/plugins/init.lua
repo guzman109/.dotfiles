@@ -84,18 +84,12 @@ local plugins = {
       ensure_installed = {
         -- LSP
         "lua-language-server",
-        "ruff-lsp",
         "pyright",
         "dockerfile-language-server",
-        "docker-compose-language-service",
-        "yaml-language-server",
         -- Formatters
         "stylua",
-        "yq",
-        "ruff",
         "prettier",
         -- Linters
-        "mypy",
       },
     },
   },
@@ -113,19 +107,9 @@ local plugins = {
     -- config = function()
     --   require "configs.conform"
     -- end,
-    opts = {
-      lsp_fallback = true,
-
-      formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "ruff_format", "ruff_fix" },
-        typescript = { "deno_fmt" },
-        javascript = { "deno_fmt" },
-        json = { "prettier" },
-        yaml = { "yq" },
-        rust = { "rustfmt" },
-      },
-    },
+	    config = function()
+      require "configs.conform"
+    end,
   },
   {
     "mfussenegger/nvim-lint",

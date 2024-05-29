@@ -10,7 +10,7 @@ local M = {}
 
 M.ui = {
 	theme = "rosepine-dawn",
-  toggle_transparency = false,
+  toggle_transparency = true,
 	theme_toggle = {
 		"rosepine",
 		"rosepine-dawn",

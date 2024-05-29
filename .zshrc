@@ -52,37 +52,26 @@ PATH="$HOME/.local/bin:$PATH"
 alias ls="eza"
 alias ksh="kitty +kitten ssh"
 alias gcm="git-credential-manager"
-alias cd="z"
 alias cat="bat"
 alias icat="kitty icat"
-alias switch-them="kitty +kitten themes"
+alias switch-theme="kitty +kitten themes"
 alias cargo-update="cargo-install-update install-update --all"
-alias klite="kitten themes --reload-in=all Tokyo Night Day"
-alias knite="kitten themes --reload-in=all Tokyo Night Moon"
+alias klite="kitten themes --reload-in=all Biscuit-Light"
+alias knite="kitten themes --reload-in=all Biscuit-Dark"
 # Starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
-# zoxide
-eval "$(zoxide init zsh)"
 
-# # pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
 
 # Deno
-export DENO_INSTALL="/home/guzman.109/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+#export DENO_INSTALL="/home/guzman.109/.deno"
+#export PATH="$DENO_INSTALL/bin:$PATH"
 
 # fzf
-eval "$(fzf --zsh)"
+#eval "$(fzf --zsh)"
 
 # ROS2
 # source /opt/ros/jazzy/setup.zsh
 
-# fnm
-export PATH="/home/guzman.109/.local/share/fnm:$PATH"
-eval "`fnm env`"
 
