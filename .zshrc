@@ -68,10 +68,11 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 export DENO_INSTALL="/home/guzman.109/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-# fzf
-eval "$(fzf --zsh)"
-
 # ROS2
 # source /opt/ros/jazzy/setup.zsh
 
+# fnm
+eval "$(fnm env --use-on-cd)"
 
+# bob-nvim
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"

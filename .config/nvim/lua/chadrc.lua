@@ -9,7 +9,7 @@ vim.opt.relativenumber = true
 local M = {}
 
 M.ui = {
-	theme = "rosepine-dawn",
+	theme = "rosepine",
   toggle_transparency = true,
 	theme_toggle = {
 		"rosepine",
