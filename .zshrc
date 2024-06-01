@@ -42,9 +42,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 # Load Completions
 autoload -U compinit && compinit
 
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # Local PATH
 PATH="$HOME/.local/bin:$PATH"
 
@@ -58,6 +55,7 @@ alias switch-theme="kitty +kitten themes"
 alias cargo-update="cargo-install-update install-update --all"
 alias klite="kitten themes --reload-in=all Biscuit-Light"
 alias knite="kitten themes --reload-in=all Biscuit-Dark"
+
 # Starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
@@ -71,8 +69,3 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # ROS2
 # source /opt/ros/jazzy/setup.zsh
 
-# fnm
-eval "$(fnm env --use-on-cd)"
-
-# bob-nvim
-export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
