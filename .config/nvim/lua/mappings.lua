@@ -105,7 +105,7 @@ map_set("n", "<A-n>", "<cmd> NvimTreeToggle <CR>", { desc = "Toggle nvimtree" })
 --    { desc = "Toggle floating term",
 -- })
 --
-map_set({ "n", "t" }, "<A-b>", function()
+map_set({ "n", "t" }, "<A-t>", function()
 	require("nvchad.term").toggle({ pos = "sp", id = "htoggleTerm", size = 0.3 })
 end, { desc = "Toggle horizontal term" })
 

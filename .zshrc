@@ -14,10 +14,9 @@ compinit
 ##################################################################################################################
 # Load Completions
 autoload -U compinit && compinit
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Local PATH
 PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # Alias
 alias ls="eza"
@@ -26,8 +25,8 @@ alias gcm="git-credential-manager"
 alias cat="bat"
 alias icat="kitty icat"
 alias switch-theme="kitty +kitten themes"
-alias klite="kitten themes --reload-in=all Biscuit-Light"
-alias knite="kitten themes --reload-in=all Biscuit-Dark"
+alias klite="kitten themes --reload-in=all 'Flexoki (Light)'"
+alias knite="kitten themes --reload-in=all 'Flexoki (Dark)'"
 
 # Starship
 eval "$(starship init zsh)"
