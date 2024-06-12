@@ -21,7 +21,6 @@ PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 # Alias
 alias ls="eza"
 alias ksh="kitty +kitten ssh"
-alias gcm="git-credential-manager"
 alias cat="bat"
 alias icat="kitty icat"
 alias switch-theme="kitty +kitten themes"
@@ -37,7 +36,4 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 # Deno
 export DENO_INSTALL="/home/guzman.109/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-
-# ROS2
-# source /opt/ros/jazzy/setup.zsh
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 source $HOME/.local/system-scripts/theme-toggle/theme-color.sh;
 echo ${THEME_COLOR}
-if [ ${THEME_COLOR} = "LIGHT" ]; then
+if [ ${THEME_COLOR} = "DARK" ]; then
 # Change Plasma Color to Dark
 plasma-apply-colorscheme BreezeDark &>/dev/null
 # plasma-apply-wallpaperimage "$HOME/Pictures/Forresty Skies/contents/images_dark/3840x2160.png"
