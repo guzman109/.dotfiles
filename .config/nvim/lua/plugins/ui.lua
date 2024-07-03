@@ -30,6 +30,7 @@ local bubbles_theme = {
     c = { fg = colors.white },
   },
 }
+local actions = require("fzf-lua.actions")
 return {
   -- { "akinsho/toggleterm.nvim", version = "*", config = true },
   {
@@ -214,8 +215,22 @@ return {
       extensions = {},
     }),
   },
-  -- {
-  --   "ibhagwan/fzf-lua",
-  --   require("fzf-lua").setup({ "skim", winopts = { preview = { default = "bat" } } }),
-  -- },
+  {
+    "ibhagwan/fzf-lua",
+    opts = {
+      defaults = require("fzf-lua.profiles.skim"),
+      winopts = {
+        preview = {
+          default = "bat",
+          scrollbar = "false",
+        },
+      },
+      fzf_opts = {
+        ["--no-scrollbar"] = false,
+      },
+      actions = {
+        ["default"] = actions.file_edit,
+      },
+    },
+  },
 }
