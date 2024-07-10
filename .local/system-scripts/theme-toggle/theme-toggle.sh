@@ -4,6 +4,7 @@ echo ${THEME_COLOR}
 if [ ${THEME_COLOR} = "LIGHT" ]; then
 # Change Plasma Color to Dark
 plasma-apply-colorscheme BreezeDark &>/dev/null
+/usr/lib/x86_64-linux-gnu/libexec/plasma-changeicons Breeze_Dark_RC &> /dev/null
 # plasma-apply-wallpaperimage "$HOME/Pictures/Forresty Skies/contents/images_dark/3840x2160.png"
 
 # Change Kitty Theme to Dark
@@ -13,6 +14,8 @@ sed -i -e 's/LIGHT/DARK/g' $HOME/.local/system-scripts/theme-toggle/theme-color.
 else
 # Change Plasma Color and Cursor to Light
 plasma-apply-colorscheme BreezeLight &>/dev/null
+/usr/lib/x86_64-linux-gnu/libexec/plasma-changeicons Breeze_RC &> /dev/null
+
 # plasma-apply-wallpaperimage "$HOME/Pictures/Forresty Skies/contents/images/3840x2160.png"
 
 # Change Kitty Theme to Dark

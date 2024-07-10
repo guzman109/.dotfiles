@@ -1,3 +1,3 @@
 #!/bin/bash
 
-export THEME_COLOR=LIGHT;
+export THEME_COLOR=DARK;

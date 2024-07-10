@@ -24,8 +24,8 @@ alias ksh="kitty +kitten ssh"
 alias cat="bat"
 alias icat="kitty icat"
 alias switch-theme="kitty +kitten themes"
-alias klite="kitten themes --reload-in=all 'Biscuit-Light'"
-alias knite="kitten themes --reload-in=all 'Biscuit-Dark'"
+alias klite="kitten themes --reload-in=all 'Tokyo Night Day'"
+alias knite="kitten themes --reload-in=all 'Tokyo Night Storm'"
 alias cargo-update="cargo-install-update install-update --all"
 alias gco="git-credential-oauth"
 alias update-kitty="zsh ~/.local/system-scripts/update-kitty.zsh"
@@ -40,6 +40,4 @@ eval "$(fnm env --use-on-cd)"
 # Deno
 export DENO_INSTALL="/home/guzman109/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-
-
 
