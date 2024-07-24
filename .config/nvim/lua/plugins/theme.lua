@@ -28,9 +28,9 @@ return {
         themeConfigFile = "~/.config/nvim/lua/plugins/color-scheme.lua", -- Described below
         livePreview = true, -- Apply theme while browsing. Default to true.
       })
-      vim.keymap.set({ "n", "v", "t" }, "<leader>tt", "<cmd>Themery<cr>", { desc = "Open Themes" })
-      vim.keymap.set({ "n", "v", "t" }, "<leader>td", "<cmd>colorscheme tokyonight-day<cr>", { desc = "Day Theme" })
-      vim.keymap.set({ "n", "v", "t" }, "<leader>tn", "<cmd>colorscheme tokyonight-storm<cr>", { desc = "Night Theme" })
+      vim.keymap.set({ "n", "v" }, "<leader>tt", "<cmd>Themery<cr>", { desc = "Open Themes" })
+      vim.keymap.set({ "n", "v" }, "<leader>td", "<cmd>colorscheme tokyonight-day<cr>", { desc = "Day Theme" })
+      vim.keymap.set({ "n", "v" }, "<leader>tn", "<cmd>colorscheme tokyonight-storm<cr>", { desc = "Night Theme" })
 
       -- im.keymap.set(),
     end,
