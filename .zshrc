@@ -27,15 +27,13 @@ alias switch-theme="kitty +kitten themes"
 alias klite="kitten themes --reload-in=all 'Tokyo Night Day'"
 alias knite="kitten themes --reload-in=all 'Tokyo Night Storm'"
 alias cargo-update="cargo-install-update install-update --all"
-alias gco="git-credential-oauth"
-alias update-kitty="zsh ~/.local/system-scripts/update-kitty.zsh"
-
+alias mc="mcli"
 # Starship
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 # fnm
-eval "$(fnm env --use-on-cd)"
+# eval "$(fnm env --use-on-cd)"
 
 # Deno
 export DENO_INSTALL="/home/guzman109/.deno"

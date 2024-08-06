@@ -1,17 +1,5 @@
 return {
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "lua",
-        "python",
-        "dockerfile",
-        "bash",
-        "typescript",
-      },
-    },
-  },
-  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
