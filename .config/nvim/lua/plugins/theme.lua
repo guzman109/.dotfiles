@@ -1,13 +1,14 @@
 return {
-  -- {
-  --   "Biscuit-Theme/nvim",
-  --   opts = {
-  --     style = {
-  --       "biscuit-dark",
-  --       "biscuit-light",
-  --     },
-  --   },
-  -- },
+  {
+    "Biscuit-Theme/nvim",
+    name = "biscuit",
+    opts = {
+      style = {
+        "biscuit-dark",
+        "biscuit-light",
+      },
+    },
+  },
   {
     "zaldih/themery.nvim",
     config = function()
@@ -38,7 +39,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-storm",
+      colorscheme = "biscuit",
     },
   },
 }
