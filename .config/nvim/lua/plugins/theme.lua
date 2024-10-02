@@ -26,7 +26,6 @@ return {
           -- "biscuit-dark",
           -- "biscuit-light",
         }, -- Your list of installed colorschemes
-        themeConfigFile = "~/.config/nvim/lua/plugins/color-scheme.lua", -- Described below
         livePreview = true, -- Apply theme while browsing. Default to true.
       })
       vim.keymap.set({ "n", "v" }, "<leader>tt", "<cmd>Themery<cr>", { desc = "Open Themes" })

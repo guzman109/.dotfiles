@@ -35,11 +35,11 @@ setopt COMPLETE_IN_WORD
 
 # Ultramarine ZSH config
 # initialize starship
-eval "$(starship init zsh)"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
 
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Ctrl + Arrow keybindings
 bindkey "^[[1;5D" backward-word
@@ -76,6 +76,7 @@ alias knite="kitten themes --reload-in=all 'Catppuccin-Macchiato'"
 alias cargo-update="cargo-install-update install-update --all"
 alias mc="mcli"
 
+eval "$(fnm env --use-on-cd)"
 
 # Deno
 export DENO_INSTALL="$HOME/.deno"
