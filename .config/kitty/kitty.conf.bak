@@ -2221,6 +2221,6 @@ map shift+cmd+/ open_url https://sw.kovidgoyal.net/kitty/
 map ctrl+shift+y new_tab_with_cwd
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Latte
+# Monokai Pro (Filter Spectrum)
 include current-theme.conf
 # END_KITTY_THEME

@@ -76,7 +76,7 @@ alias knite="kitten themes --reload-in=all 'Catppuccin-Macchiato'"
 alias cargo-update="cargo-install-update install-update --all"
 alias mc="mcli"
 
-eval "$(fnm env --use-on-cd)"
+# eval "$(fnm env --use-on-cd)"
 
 # Deno
 export DENO_INSTALL="$HOME/.deno"
@@ -84,3 +84,5 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 source "$HOME/.rye/env"
 eval "$(uv generate-shell-completion zsh)"
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
