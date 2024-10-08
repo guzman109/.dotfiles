@@ -1,7 +1,0 @@
-Section: misc
-Priority: optional
-Standards-Version: 3.9.2
-
-Package: blacklist-deb-packages
-Provides: ibus, ibus-table-emoji, nautilus, qtbase-abi-5-15-3  
-Description: dummy package to prevent the installation of unwanted packages
