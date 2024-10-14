@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PASSWD=$(kdialog --password "Password Required")
+echo "$PASSWD" | sudo -E vorta

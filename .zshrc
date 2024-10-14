@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/guzman.109/.zsh/completions:"* ]]; then export FPATH="/home/guzman.109/.zsh/completions:$FPATH"; fi
 #
 # .zshrc is sourced in interactive shells.
 # It should contain commands to set up aliases,
@@ -86,3 +88,4 @@ source "$HOME/.rye/env"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
+. "/home/guzman.109/.deno/env"
