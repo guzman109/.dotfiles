@@ -86,6 +86,5 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 source "$HOME/.rye/env"
 eval "$(uv generate-shell-completion zsh)"
-eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 . "/home/guzman.109/.deno/env"
