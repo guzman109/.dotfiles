@@ -4,19 +4,17 @@ echo ${THEME_COLOR}
 if [ ${THEME_COLOR} = "DARK" ]; then
 # Change Plasma Color to Dark
 plasma-apply-colorscheme BreezeDark &>/dev/null
-# plasma-apply-wallpaperimage "$HOME/Pictures/Forresty Skies/contents/images_dark/3840x2160.png"
+/usr/libexec/plasma-changeicons Colloid-Dark &>/dev/null
 
 # Change Kitty Theme to Dark
-kitten themes --reload-in=all "Biscuit-Dark"
-sed -i -e 's/LIGHT/DARK/g' $HOME/.local/system-scripts/theme-toggle/theme-color.sh
+kitten themes --reload-in=all "Catppuccin-Frappe"
 
 else
 # Change Plasma Color and Cursor to Light
 plasma-apply-colorscheme BreezeLight &>/dev/null
-# plasma-apply-wallpaperimage "$HOME/Pictures/Forresty Skies/contents/images/3840x2160.png"
+/usr/libexec/plasma-changeicons Colloid-Light &>/dev/null
 
 # Change Kitty Theme to Dark
-kitten themes --reload-in=all "Biscuit-Light"
+kitten themes --reload-in=all "Catppuccin-Latte"
 
-sed -i -e 's/DARK/LIGHT/g' $HOME/.local/system-scripts/theme-toggle/theme-color.sh
 fi

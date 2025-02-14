@@ -3,4 +3,4 @@
 -- Add any additional keymaps here
 
 -- Remove LazyGit Keymap
-vim.keymap.del("n", "<leader>gL")
+vim.keymap.set({"n", "i", }, "<leader>t",  "",{desc="themes"})
